@@ -6,3 +6,5 @@ Deployment workflow: GitHub -> Vercel preview -> review -> production.
 
 Primary contact: 404-635-6502
 Domain: ShamsHomeImprovement.com
+
+Deployment refresh: 2026-09-15
