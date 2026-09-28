@@ -1,6 +1,7 @@
 import HeroSlides from "./HeroSlides";
 import ProjectGallery from "./ProjectGallery";
 import AboutSlideshow from "./AboutSlideshow";
+import EstimateForm from "./EstimateForm";
 
 const services = [
   ["Bathroom Remodeling", "Walk-in showers, tub-to-shower conversions, tile surrounds, vanities, shower doors and complete bathroom updates."],
@@ -28,6 +29,7 @@ export default function HomePage() {
             <a href="#about">About</a>
             <a href="#work">Our Work</a>
             <a href="#reviews">Reviews</a>
+            <a href="#estimate">Free Estimate</a>
             <a href="#contact">Contact</a>
           </nav>
           <a className="button small" href="tel:+14046356502">Call 404-635-6502</a>
@@ -43,7 +45,7 @@ export default function HomePage() {
             <h1>Quality work.<br/><span>Built to last.</span></h1>
             <p className="lead">From bathroom renovations and tile work to decks, covered porches, repairs, painting, plumbing and electrical improvements, we help homeowners transform their spaces with dependable workmanship.</p>
             <div className="actions">
-              <a className="button" href="tel:+14046356502">Call for a Free Estimate</a>
+              <a className="button" href="#estimate">Request a Free Estimate</a>
               <a className="button outline" href="#services">View Services</a>
             </div>
             <div className="trust"><span>✓ Remodeling</span><span>✓ Repairs</span><span>✓ Metro Atlanta</span></div>
@@ -103,10 +105,12 @@ export default function HomePage() {
               <a href="tel:+14046356502"><small>CALL</small><strong>404-635-6502</strong></a>
               <a href="sms:+14046356502"><small>TEXT</small><strong>404-635-6502</strong></a>
               <div><small>SERVICE AREA</small><strong>Metro Atlanta</strong></div>
-              <div><small>WEBSITE</small><strong>ShamsHomeImprovement.com</strong></div>
+              <a href="https://shamshomeimprovement.com/"><small>WEBSITE</small><strong>ShamsHomeImprovement.com</strong></a>
             </div>
           </div>
         </section>
+
+        <section className="section estimateSection" id="estimate"><div className="container"><EstimateForm /></div></section>
 
         <section className="section reviews" id="reviews">
           <div className="container">
