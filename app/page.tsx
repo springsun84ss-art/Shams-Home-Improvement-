@@ -1,3 +1,6 @@
+import HeroSlides from "./HeroSlides";
+import ProjectGallery from "./ProjectGallery";
+
 const services = [
   ["Bathroom Remodeling", "Walk-in showers, tub-to-shower conversions, tile surrounds, vanities, shower doors and complete bathroom updates."],
   ["Tile & Flooring", "Tile installation, flooring, laundry rooms, backsplashes, carpet replacement and finish work."],
@@ -10,20 +13,13 @@ const services = [
   ["Countertops & Cabinets", "Countertop replacement, cabinet changes and kitchen cabinet or vanity painting."],
 ];
 
-const projects = [
-  "Bathroom Remodeling",
-  "Walk-In Shower",
-  "Covered Porch",
-  "Back Deck Replacement & Repairs",
-];
-
 export default function HomePage() {
   return (
     <>
       <header className="header">
         <div className="container nav">
           <a className="brand" href="#top">
-            <span className="brandMark">SH</span>
+            <img className="brandLogo" src="/images/shams-logo.webp" alt="Shams Home Improvement logo" />
             <span><strong>Shams Home Improvement</strong><small>Atlanta Remodeling & Renovation</small></span>
           </a>
           <nav className="links">
@@ -39,6 +35,8 @@ export default function HomePage() {
 
       <main id="top">
         <section className="hero">
+          <HeroSlides />
+          <img className="heroWatermark" src="/images/shams-watermark.webp" alt="" aria-hidden="true" />
           <div className="container heroInner">
             <p className="eyebrow">Metro Atlanta Home Improvement</p>
             <h1>Quality work.<br/><span>Built to last.</span></h1>
@@ -69,7 +67,7 @@ export default function HomePage() {
 
         <section className="section" id="about">
           <div className="container split">
-            <div className="photoPlaceholder"><span>PROJECT PHOTOS</span><small>Your completed-project gallery will be added here.</small></div>
+            <img className="aboutPhoto" src="/images/about-project.webp" alt="Completed home improvement project" loading="lazy" />
             <div>
               <p className="eyebrow">Why Choose Us</p>
               <h2>Good craftsmanship starts with doing the job right.</h2>
@@ -84,7 +82,8 @@ export default function HomePage() {
           <div className="container">
             <p className="eyebrow">Our Work</p>
             <h2>Recent projects</h2>
-            <div className="projectGrid">{projects.map((project) => <div className="project" key={project}><span>{project}</span></div>)}</div>
+            <p className="sectionCopy">Explore the photos from each project, including the work in progress and finished results.</p>
+            <ProjectGallery />
           </div>
         </section>
 
