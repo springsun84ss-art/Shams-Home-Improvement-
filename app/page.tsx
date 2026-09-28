@@ -1,5 +1,6 @@
 import HeroSlides from "./HeroSlides";
 import ProjectGallery from "./ProjectGallery";
+import AboutSlideshow from "./AboutSlideshow";
 
 const services = [
   ["Bathroom Remodeling", "Walk-in showers, tub-to-shower conversions, tile surrounds, vanities, shower doors and complete bathroom updates."],
@@ -67,7 +68,7 @@ export default function HomePage() {
 
         <section className="section" id="about">
           <div className="container split">
-            <img className="aboutPhoto" src="/images/about-project.webp" alt="Completed home improvement project" loading="lazy" />
+            <AboutSlideshow />
             <div>
               <p className="eyebrow">Why Choose Us</p>
               <h2>Good craftsmanship starts with doing the job right.</h2>
