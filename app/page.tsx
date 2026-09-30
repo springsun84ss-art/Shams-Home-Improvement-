@@ -84,7 +84,7 @@ export default function HomePage() {
           <div className="container">
             <p className="eyebrow">Simple Process</p>
             <h2>From idea to finished project</h2>
-            <div className="steps"><article><b>1</b><h3>Contact Us</h3><p>Call or email and tell us what you need.</p></article><article><b>2</b><h3>Get an Estimate</h3><p>We review the project and discuss the work involved.</p></article><article><b>3</b><h3>We Get to Work</h3><p>Your project is completed carefully and professionally.</p></article></div>
+            <div className="steps"><article><h3>Contact Us</h3><p>Call or email and tell us what you need.</p></article><article><h3>Get an Estimate</h3><p>We review the project and discuss the work involved.</p></article><article><h3>We Get to Work</h3><p>Your project is completed carefully and professionally.</p></article></div>
           </div>
         </section>
 
