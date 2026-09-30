@@ -106,7 +106,13 @@ export default function HomePage() {
           <div className="container">
             <p className="eyebrow">Customer Reviews</p>
             <h2>What customers say</h2>
-            <div className="reviewCard"><div>★★★★★</div><h3>Reviews coming soon</h3><p>This section is ready for verified feedback from Shams Home Improvement customers.</p></div>
+            <div className="reviewCard" style={{ maxWidth: 860, border: "1px solid rgba(36,51,61,.12)", borderTop: "4px solid var(--accent)" }}>
+              <span style={{ color: "var(--muted)", fontSize: 13, fontWeight: 700 }}>Share your experience on Google</span>
+              <h3 style={{ fontSize: "clamp(24px,4vw,34px)", lineHeight: 1.2, margin: "14px 0" }}>Worked with us? We’d love to hear from you.</h3>
+              <p style={{ color: "var(--muted)", maxWidth: 620 }}>Your honest feedback helps other homeowners get to know Shams Home Improvement. Tell us about your project and your experience with our team.</p>
+              <a className="button dark" href="https://g.page/r/CVK0xJQOsZTXEBM/review" target="_blank" rel="noopener noreferrer" style={{ marginTop: 14 }}>Leave a Google Review <span aria-hidden="true" style={{ marginLeft: 10 }}>↗</span></a>
+              <p style={{ color: "var(--muted)", fontSize: 13, marginBottom: 0 }}>Opens Google in a new tab. Sign in to your Google account to leave a review.</p>
+            </div>
           </div>
         </section>
       </main>
