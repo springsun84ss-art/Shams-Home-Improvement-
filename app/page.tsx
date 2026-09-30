@@ -2,18 +2,8 @@ import HeroSlides from "./HeroSlides";
 import ProjectGallery from "./ProjectGallery";
 import AboutSlideshow from "./AboutSlideshow";
 import EstimateForm from "./EstimateForm";
+import ServiceGallery from "./ServiceGallery";
 
-const services = [
-  ["Bathroom Remodeling", "Walk-in showers, tub-to-shower conversions, tile surrounds, vanities, shower doors and complete bathroom updates."],
-  ["Tile & Flooring", "Tile installation, flooring, laundry rooms, backsplashes, carpet replacement and finish work."],
-  ["Plumbing", "Faucets, sinks, garbage disposals, fixtures and common residential plumbing repairs."],
-  ["Electrical", "Ceiling fans, light fixtures, outlets, switches, breakers and common residential electrical improvements."],
-  ["Painting & Repairs", "Interior and exterior painting, drywall, rotten wood replacement, pressure washing and repairs."],
-  ["Carpentry & Doors", "Trim, baseboards, interior and exterior doors, framing and custom carpentry improvements."],
-  ["Decks", "Deck repairs, replacement, rebuilding and exterior wood work."],
-  ["Covered Porches", "Covered porch projects from framing and roofing through flooring, trim, paint and finishing."],
-  ["Countertops & Cabinets", "Countertop replacement, cabinet changes and kitchen cabinet or vanity painting."],
-];
 
 export default function HomePage() {
   return (
@@ -64,7 +54,7 @@ export default function HomePage() {
             <p className="eyebrow">What We Do</p>
             <h2>Home improvement services</h2>
             <p className="sectionCopy">Practical solutions for renovations, upgrades and repairs throughout your home.</p>
-            <div className="grid">{services.map(([title, text], i) => <article className="card" key={title}><span>{String(i + 1).padStart(2, "0")}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
+            <ServiceGallery />
           </div>
         </section>
 
