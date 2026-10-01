@@ -19,8 +19,8 @@
   .heroInner>.eyebrow::after{
     content:"";
     display:block;
-    width:110px;
-    height:110px;
+    width:150px;
+    height:150px;
     margin:18px auto 22px;
     background:url("/images/shams-watermark.webp") center / contain no-repeat;
     opacity:.12;
