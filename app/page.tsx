@@ -1,3 +1,4 @@
+import GoogleReviews from "./GoogleReviews";
 import HeroSlides from "./HeroSlides";
 import ProjectGallery from "./ProjectGallery";
 import AboutSlideshow from "./AboutSlideshow";
@@ -106,6 +107,7 @@ export default function HomePage() {
           <div className="container">
             <p className="eyebrow">Customer Reviews</p>
             <h2>What customers say</h2>
+            <GoogleReviews />
             <div className="reviewCard" style={{ maxWidth: 860, border: "1px solid rgba(36,51,61,.12)", borderTop: "4px solid var(--accent)" }}>
               <span style={{ color: "var(--muted)", fontSize: 13, fontWeight: 700 }}>Share your experience on Google</span>
               <h3 style={{ fontSize: "clamp(24px,4vw,34px)", lineHeight: 1.2, margin: "14px 0" }}>Worked with us? We’d love to hear from you.</h3>
