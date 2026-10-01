@@ -1,19 +1,10 @@
+import GoogleReviews from "./GoogleReviews";
 import HeroSlides from "./HeroSlides";
 import ProjectGallery from "./ProjectGallery";
 import AboutSlideshow from "./AboutSlideshow";
 import EstimateForm from "./EstimateForm";
+import ServiceGallery from "./ServiceGallery";
 
-const services = [
-  ["Bathroom Remodeling", "Walk-in showers, tub-to-shower conversions, tile surrounds, vanities, shower doors and complete bathroom updates."],
-  ["Tile & Flooring", "Tile installation, flooring, laundry rooms, backsplashes, carpet replacement and finish work."],
-  ["Plumbing", "Faucets, sinks, garbage disposals, fixtures and common residential plumbing repairs."],
-  ["Electrical", "Ceiling fans, light fixtures, outlets, switches, breakers and common residential electrical improvements."],
-  ["Painting & Repairs", "Interior and exterior painting, drywall, rotten wood replacement, pressure washing and repairs."],
-  ["Carpentry & Doors", "Trim, baseboards, interior and exterior doors, framing and custom carpentry improvements."],
-  ["Decks", "Deck repairs, replacement, rebuilding and exterior wood work."],
-  ["Covered Porches", "Covered porch projects from framing and roofing through flooring, trim, paint and finishing."],
-  ["Countertops & Cabinets", "Countertop replacement, cabinet changes and kitchen cabinet or vanity painting."],
-];
 
 export default function HomePage() {
   return (
@@ -64,7 +55,7 @@ export default function HomePage() {
             <p className="eyebrow">What We Do</p>
             <h2>Home improvement services</h2>
             <p className="sectionCopy">Practical solutions for renovations, upgrades and repairs throughout your home.</p>
-            <div className="grid">{services.map(([title, text], i) => <article className="card" key={title}><span>{String(i + 1).padStart(2, "0")}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
+            <ServiceGallery />
           </div>
         </section>
 
@@ -94,7 +85,7 @@ export default function HomePage() {
           <div className="container">
             <p className="eyebrow">Simple Process</p>
             <h2>From idea to finished project</h2>
-            <div className="steps"><article><b>1</b><h3>Contact Us</h3><p>Call or email and tell us what you need.</p></article><article><b>2</b><h3>Get an Estimate</h3><p>We review the project and discuss the work involved.</p></article><article><b>3</b><h3>We Get to Work</h3><p>Your project is completed carefully and professionally.</p></article></div>
+            <div className="steps"><article><h3>Contact Us</h3><p>Call or email and tell us what you need.</p></article><article><h3>Get an Estimate</h3><p>We review the project and discuss the work involved.</p></article><article><h3>We Get to Work</h3><p>Your project is completed carefully and professionally.</p></article></div>
           </div>
         </section>
 
@@ -116,7 +107,14 @@ export default function HomePage() {
           <div className="container">
             <p className="eyebrow">Customer Reviews</p>
             <h2>What customers say</h2>
-            <div className="reviewCard"><div>★★★★★</div><h3>Reviews coming soon</h3><p>This section is ready for verified feedback from Shams Home Improvement customers.</p></div>
+            <GoogleReviews />
+            <div className="reviewCard" style={{ maxWidth: 860, border: "1px solid rgba(36,51,61,.12)", borderTop: "4px solid var(--accent)" }}>
+              <span style={{ color: "var(--muted)", fontSize: 13, fontWeight: 700 }}>Share your experience on Google</span>
+              <h3 style={{ fontSize: "clamp(24px,4vw,34px)", lineHeight: 1.2, margin: "14px 0" }}>Worked with us? We’d love to hear from you.</h3>
+              <p style={{ color: "var(--muted)", maxWidth: 620 }}>Your honest feedback helps other homeowners get to know Shams Home Improvement. Tell us about your project and your experience with our team.</p>
+              <a className="button dark" href="https://g.page/r/CVK0xJQOsZTXEBM/review" target="_blank" rel="noopener noreferrer" style={{ marginTop: 14 }}>Leave a Google Review <span aria-hidden="true" style={{ marginLeft: 10 }}>↗</span></a>
+              <p style={{ color: "var(--muted)", fontSize: 13, marginBottom: 0 }}>Opens Google in a new tab. Sign in to your Google account to leave a review.</p>
+            </div>
           </div>
         </section>
       </main>
