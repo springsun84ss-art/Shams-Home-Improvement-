@@ -33,7 +33,7 @@ export default function HomePage() {
           <img className="heroWatermark" src="/images/shams-watermark.webp" alt="" aria-hidden="true" />
           <div className="container heroInner">
             <p className="eyebrow">Metro Atlanta Home Improvement</p>
-            <h1>Quality work.<br/><span>Built to last.</span></h1>
+            <h1><span className="heroAccent">Quality work.</span><br/><span className="heroTagline">Built to last.</span></h1>
             <p className="lead">From bathroom renovations and tile work to decks, covered porches, repairs, painting, plumbing and electrical improvements, we help homeowners transform their spaces with dependable workmanship.</p>
             <div className="actions">
               <a className="button" href="#estimate">Request a Free Estimate</a>
