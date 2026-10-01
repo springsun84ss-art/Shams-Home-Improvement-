@@ -62,7 +62,7 @@
 /* Center the softly visible phone logo above the headline. */
 @media(max-width:640px){
 .heroWatermark{display:none}
-.heroInner>.eyebrow::after{content:"";display:block;width:150px;height:150px;margin:18px auto 22px;background:url("/images/shams-watermark.webp") center / contain no-repeat;opacity:.12;pointer-events:none}
+.heroInner>.eyebrow::after{content:"";display:block;width:150px;height:150px;margin:18px auto 22px;background:url("/images/shams-watermark.webp") center / contain no-repeat;opacity:1;pointer-events:none}
 }
 
 .hero h1 .heroAccent{color:#f1c15b}.hero h1 .heroTagline{color:#fff}
