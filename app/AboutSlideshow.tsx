@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { galleries } from "./gallery-data";
 
-const labels = { bathroom: "Bathroom Remodeling", porch: "Covered Porches", deck: "Deck Repairs", kitchen: "Kitchens & Countertops" };
+const labels = { bathroom: "Bathroom Remodeling", atticCloset: "Attic-to-Closet Conversion", roomConversion: "Foyer-to-Room Conversion", porch: "Covered Porches", deck: "Deck Repairs", kitchen: "Kitchens & Countertops" };
 const allPhotos = (Object.keys(galleries) as (keyof typeof galleries)[]).flatMap(group =>
   galleries[group].map(photo => ({ ...photo, group: labels[group] }))
 );

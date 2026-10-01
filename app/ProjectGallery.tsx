@@ -6,6 +6,8 @@ import { galleries } from "./gallery-data";
 type Group = keyof typeof galleries;
 const projects: { key: Group; title: string; cover: string }[] = [
   { key: "bathroom", title: "Bathroom Remodeling", cover: "/images/bathroom-17.webp" },
+  { key: "atticCloset", title: "Attic-to-Closet Conversion", cover: "/images/attic-closet-06.webp" },
+  { key: "roomConversion", title: "Foyer-to-Room Conversion", cover: "/images/foyer-room-02.webp" },
   { key: "porch", title: "Covered Porches", cover: "/images/porch-21.webp" },
   { key: "deck", title: "Deck Repairs & Replacement", cover: "/images/deck-feature.webp" },
   { key: "kitchen", title: "Kitchens & Countertops", cover: "/images/kitchen-03.webp" },

@@ -71,6 +71,50 @@ export const galleries = {
     {
       "caption": "Bathroom Project 3 — Glass Shower & Tile Detail",
       "src": "/images/bathroom-18.webp"
+    },
+    {
+      "caption": "Bedroom Closet Conversion — Finished Bathroom",
+      "src": "/images/bathroom-19.webp"
+    },
+    {
+      "caption": "Bedroom Closet Conversion — Vanity, Tub & Shower",
+      "src": "/images/bathroom-20.webp"
+    }
+  ],
+  "atticCloset": [
+    {
+      "caption": "Attic-to-Closet Conversion — Framing and Insulation",
+      "src": "/images/attic-closet-01.webp"
+    },
+    {
+      "caption": "Attic-to-Closet Conversion — Electrical Work in the Attic",
+      "src": "/images/attic-closet-02.webp"
+    },
+    {
+      "caption": "Attic-to-Closet Conversion — Drywall in Progress",
+      "src": "/images/attic-closet-03.webp"
+    },
+    {
+      "caption": "Attic-to-Closet Conversion — Finished Walls and Floor Preparation",
+      "src": "/images/attic-closet-04.webp"
+    },
+    {
+      "caption": "Attic-to-Closet Conversion — Finished Interior",
+      "src": "/images/attic-closet-05.webp"
+    },
+    {
+      "caption": "Attic-to-Closet Conversion — Completed Closet Space",
+      "src": "/images/attic-closet-06.webp"
+    }
+  ],
+  "roomConversion": [
+    {
+      "caption": "Open Foyer-to-Room Conversion — Finished Room",
+      "src": "/images/foyer-room-01.webp"
+    },
+    {
+      "caption": "Open Foyer-to-Room Conversion — Finished Flooring and Trim",
+      "src": "/images/foyer-room-02.webp"
     }
   ],
   "porch": [
