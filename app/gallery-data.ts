@@ -262,6 +262,46 @@ export const galleries = {
       "caption": "Covered Porch Project 2 — Finished Floor & Columns",
       "src": "/images/porch-25.webp"
     }
+    {
+      "caption": "Extended Covered Porch Project — Rear view of the framing area",
+      "src": "/images/porch-extended-04.webp"
+    },
+    {
+      "caption": "Extended Covered Porch Project — Roof construction in progress",
+      "src": "/images/porch-extended-08.webp"
+    },
+    {
+      "caption": "Extended Covered Porch Project — Roof framing along the house",
+      "src": "/images/porch-extended-10.webp"
+    },
+    {
+      "caption": "Extended Covered Porch Project — View beneath the new roof framing",
+      "src": "/images/porch-extended-09.webp"
+    },
+    {
+      "caption": "Extended Covered Porch Project — Roof joists viewed from below",
+      "src": "/images/porch-extended-06.webp"
+    },
+    {
+      "caption": "Extended Covered Porch Project — Framing and support columns",
+      "src": "/images/porch-extended-07.webp"
+    },
+    {
+      "caption": "Extended Covered Porch Project — Framing viewed from the yard",
+      "src": "/images/porch-extended-05.webp"
+    },
+    {
+      "caption": "Extended Covered Porch Project — Completed porch, wide view",
+      "src": "/images/porch-extended-03.webp"
+    },
+    {
+      "caption": "Extended Covered Porch Project — Completed patio and ceiling",
+      "src": "/images/porch-extended-02.webp"
+    },
+    {
+      "caption": "Extended Covered Porch Project — Finished covered patio",
+      "src": "/images/porch-extended-01.webp"
+    },
   ],
   "deck": [
     {
