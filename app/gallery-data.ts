@@ -108,14 +108,18 @@ export const galleries = {
     }
   ],
   "roomConversion": [
-    {
-      "caption": "Open Foyer-to-Room Conversion — Finished Room",
-      "src": "/images/foyer-room-01.webp"
-    },
-    {
-      "caption": "Open Foyer-to-Room Conversion — Finished Flooring and Trim",
-      "src": "/images/foyer-room-02.webp"
-    }
+    { "caption": "Foyer-to-room conversion — framing and floor layout", "src": "/images/room-conversion-01.webp" },
+    { "caption": "Foyer-to-room conversion — subfloor and framing progress", "src": "/images/room-conversion-02.webp" },
+    { "caption": "Foyer-to-room conversion — ceiling drywall and trim work", "src": "/images/room-conversion-03.webp" },
+    { "caption": "Foyer-to-room conversion — new framing in progress", "src": "/images/room-conversion-04.webp" },
+    { "caption": "Foyer-to-room conversion — drywall and wall finish preparation", "src": "/images/room-conversion-05.webp" },
+    { "caption": "Foyer-to-room conversion — floor preparation and installation", "src": "/images/room-conversion-06.webp" },
+    { "caption": "Foyer-to-room conversion — LVP flooring and lighting installed", "src": "/images/room-conversion-07.webp" },
+    { "caption": "Foyer-to-room conversion — finished ceiling trim and lighting", "src": "/images/room-conversion-08.webp" },
+    { "caption": "Foyer-to-room conversion — completed room with LVP flooring", "src": "/images/room-conversion-09.webp" },
+    { "caption": "Foyer-to-room conversion — finished view from the bedroom", "src": "/images/room-conversion-10.webp" },
+    { "caption": "Foyer-to-room conversion — additional finished view", "src": "/images/foyer-room-01.webp" },
+    { "caption": "Foyer-to-room conversion — additional flooring and trim view", "src": "/images/foyer-room-02.webp" }
   ],
   "porch": [
     {

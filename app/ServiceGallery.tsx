@@ -13,6 +13,7 @@ const services = [
   { title: "Decks", text: "Repairs, rebuilding & replacement", cover: "/images/deck-feature.webp", photos: [...galleries.deck] },
   { title: "Covered Porches", text: "From framing to the finished porch", cover: "/images/porch-21.webp", photos: [...galleries.porch] },
   { title: "Countertops & Cabinets", text: "Kitchen surfaces & cabinet updates", cover: "/images/kitchen-03.webp", photos: [...galleries.kitchen] },
+  { title: "Interior Remodeling", text: "Room conversions, framing & finish work", cover: "/images/room-conversion-09.webp", photos: [...galleries.roomConversion] },
 ];
 
 export default function ServiceGallery() {
