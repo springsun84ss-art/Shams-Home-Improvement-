@@ -221,41 +221,25 @@ export const galleries = {
   ],
   "deck": [
     {
-      "caption": "Deck Repair — Before / Framing",
+      "caption": "Deck Floor Replacement — Before / Existing Deck",
       "src": "/images/deck-01.webp"
     },
     {
-      "caption": "New Lumber & Repair Work",
+      "caption": "Deck Floor Replacement — Repair & New Lumber",
       "src": "/images/deck-02.webp"
     },
     {
-      "caption": "Completed Deck",
+      "caption": "Deck Floor Replacement — After / Repaired & Stained Deck",
       "src": "/images/deck-03.webp"
     },
     {
-      "caption": "Completed Deck — Side View",
+      "caption": "Deck Floor Replacement — After / Finished Deck Side View",
       "src": "/images/deck-04.webp"
     },
     {
-      "caption": "Completed Deck — Privacy Wall",
+      "caption": "Deck Floor Replacement — After / Side Privacy Wall",
       "src": "/images/deck-05.webp"
     },
-    {
-      "caption": "Deck Floor Replacement & Refinish — Before",
-      "src": "/images/deck-06.webp"
-    },
-    {
-      "caption": "Deck Floor Replacement & Refinish — New Floorboards",
-      "src": "/images/deck-07.webp"
-    },
-    {
-      "caption": "Deck Floor Replacement & Refinish — Repaired Deck & Side Privacy Panel",
-      "src": "/images/deck-08.webp"
-    },
-    {
-      "caption": "Deck Floor Replacement & Refinish — Finished Stain",
-      "src": "/images/deck-09.webp"
-    }
   ],
   "kitchen": [
     {
