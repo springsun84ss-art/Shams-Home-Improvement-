@@ -313,6 +313,14 @@ export const galleries = {
       "src": "/images/deck-02.webp"
     },
     {
+      "caption": "Deck Floor Replacement — New Floorboards & Privacy Fence / Before Staining",
+      "src": "/images/deck-replaced-floor-1.svg"
+    },
+    {
+      "caption": "Deck Floor Replacement — Replaced Floorboards & Privacy Fence Detail / Before Staining",
+      "src": "/images/deck-replaced-floor-2.svg"
+    },
+    {
       "caption": "Deck Floor Replacement — After / Repaired & Stained Deck",
       "src": "/images/deck-03.webp"
     },
