@@ -183,6 +183,46 @@ export const galleries = {
       "src": "/images/porch-15.webp"
     },
     {
+      "caption": "Covered Porch Project 2 — Original roof framing",
+      "src": "/images/porch-2-process-01.webp"
+    },
+    {
+      "caption": "Covered Porch Project 2 — Framing viewed from below",
+      "src": "/images/porch-2-process-02.webp"
+    },
+    {
+      "caption": "Covered Porch Project 2 — Ceiling installation begins",
+      "src": "/images/porch-2-process-03.webp"
+    },
+    {
+      "caption": "Covered Porch Project 2 — Ceiling panels in progress",
+      "src": "/images/porch-2-process-04.webp"
+    },
+    {
+      "caption": "Covered Porch Project 2 — Ceiling panels and trim work",
+      "src": "/images/porch-2-process-05.webp"
+    },
+    {
+      "caption": "Covered Porch Project 2 — Painted ceiling and recessed lights",
+      "src": "/images/porch-2-process-06.webp"
+    },
+    {
+      "caption": "Covered Porch Project 2 — Finished ceiling in daylight",
+      "src": "/images/porch-2-process-07.webp"
+    },
+    {
+      "caption": "Covered Porch Project 2 — Completed porch exterior",
+      "src": "/images/porch-2-process-08.webp"
+    },
+    {
+      "caption": "Covered Porch Project 2 — Finished ceiling from the side",
+      "src": "/images/porch-2-process-09.webp"
+    },
+    {
+      "caption": "Covered Porch Project 2 — Finished ceiling detail",
+      "src": "/images/porch-2-process-10.webp"
+    },
+    {
       "caption": "Covered Porch Project 2 — Framing & Roof Structure",
       "src": "/images/porch-16.webp"
     },
