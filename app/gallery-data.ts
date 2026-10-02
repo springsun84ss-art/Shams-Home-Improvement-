@@ -239,6 +239,22 @@ export const galleries = {
     {
       "caption": "Completed Deck — Privacy Wall",
       "src": "/images/deck-05.webp"
+    },
+    {
+      "caption": "Deck Floor Replacement & Refinish — Before",
+      "src": "/images/deck-06.webp"
+    },
+    {
+      "caption": "Deck Floor Replacement & Refinish — New Floorboards",
+      "src": "/images/deck-07.webp"
+    },
+    {
+      "caption": "Deck Floor Replacement & Refinish — Repaired Deck & Side Privacy Panel",
+      "src": "/images/deck-08.webp"
+    },
+    {
+      "caption": "Deck Floor Replacement & Refinish — Finished Stain",
+      "src": "/images/deck-09.webp"
     }
   ],
   "kitchen": [
