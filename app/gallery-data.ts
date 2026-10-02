@@ -261,7 +261,7 @@ export const galleries = {
     {
       "caption": "Covered Porch Project 2 — Finished Floor & Columns",
       "src": "/images/porch-25.webp"
-    }
+    },
     {
       "caption": "Extended Covered Porch Project — Rear view of the framing area",
       "src": "/images/porch-extended-04.webp"
