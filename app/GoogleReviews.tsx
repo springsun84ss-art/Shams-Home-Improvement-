@@ -91,7 +91,7 @@ export default function GoogleReviews() {
         {review.googleMapsUri && <a className="textLink" href={review.googleMapsUri} target="_blank" rel="noopener noreferrer">View this review on Google Maps ↗</a>}
       </article>
       {data.reviews.length > 1 && <div className="googleReviewControls"><button type="button" onClick={() => move(-1)} aria-label="Previous review">←</button><span>{index + 1} / {data.reviews.length}</span><button type="button" onClick={() => move(1)} aria-label="Next review">→</button>{!reduced && <button type="button" onClick={() => setPaused(p => !p)}>{paused ? "Play" : "Pause"}</button>}</div>}
-      <p className="googleReviewNotice">Reviews supplied by Google, ordered by relevance. Google checks for fake content; reviews are not individually verified.</p>
+      <p className="googleReviewNotice">Reviews supplied by Google. Google checks for fake content; reviews are not individually verified.</p>
       {data.url && <a className="textLink" href={data.url} target="_blank" rel="noopener noreferrer">Read all reviews on Google Maps ↗</a>}
     </div>}
     <p className="googleReviewNotice"><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></p>
