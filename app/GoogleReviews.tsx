@@ -56,7 +56,7 @@ export default function GoogleReviews() {
           .then(r => r.ok ? r.json() : null)
           .then(result => {
             if (result && Array.isArray(result.reviews)) {
-              const normalize = (value: string) => value.toLowerCase().replace(/\\s+/g, " ").trim();
+              const normalize = (value: string) => value.toLowerCase().replace(/\s+/g, " ").trim();
               const featuredKeys = new Set(featuredReviews.map(review => {
                 const body = review.originalText?.text || review.text?.text || "";
                 return `${normalize(review.authorAttribution.displayName)}|${normalize(body)}`;
