@@ -25,15 +25,21 @@ const featuredReviews: Review[] = [
     authorAttribution: { displayName: "Norrie Horak" }
   },
   {
+    name: "featured-weam-bfd",
+    rating: 5,
+    originalText: { text: "Rabee and the team renovated our master bathroom and they did a great job. I highly recommend working with him." },
+    authorAttribution: { displayName: "Weam Bfd" }
+  },
+  {
     name: "featured-archie-ricard",
     rating: 5,
     authorAttribution: { displayName: "Archie Ricard" }
   },
   {
-    name: "featured-google-customer",
+    name: "featured-nassir-hatoum",
     rating: 5,
     originalText: { text: "We had an excellent experience working with Shams Home Improvement and are extremely happy with the results. They completed several major projects in our home, including converting a large walk-in closet into a beautiful new bathroom, transforming our high open foyer into a functional additional room on the second floor, converting the attic space above the garage into a spacious closet, and painting the interior of our home. From start to finish, the team was professional, reliable, respectful, and attentive to detail. They communicated clearly throughout the entire process, listened carefully to our ideas and needs, and made sure each project was completed properly and to a high standard. We are very pleased with the improvements they made to our home and would highly recommend Shams Home Improvement to anyone looking for a skilled, dependable, and professional home improvement company." },
-    authorAttribution: { displayName: "Google customer" }
+    authorAttribution: { displayName: "Nassir Hatoum" }
   }
 ];
 export default function GoogleReviews() {
