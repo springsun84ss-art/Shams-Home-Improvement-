@@ -2,9 +2,38 @@
 import { useEffect, useRef, useState } from "react";
 type Review = { name: string; rating: number; text?: { text: string }; originalText?: { text: string }; relativePublishTimeDescription?: string; googleMapsUri?: string; authorAttribution: { displayName: string; uri?: string; photoUri?: string } };
 type Data = { reviews: Review[]; rating?: number; count?: number; url?: string };
+
+// Recent reviews shared by the owner. Keep these available if Google's live feed
+// is temporarily unavailable, and combine them with any other Google reviews.
+const featuredReviews: Review[] = [
+  {
+    name: "featured-ramzi-kanso",
+    rating: 5,
+    originalText: { text: "Absolutely amazing quality of work and attention to detail. This was my third project using Shams Home Improvement, and once again, they exceeded expectations. Not only do they deliver outstanding craftsmanship, but their team is also honest, respectful, and leaves the workspace spotless. On top of their fair pricing, what sets them apart is their transparency—there were zero surprises on my bill. Everything was completed right on time and exactly for the price we agreed upon. I can’t recommend them highly enough!" },
+    authorAttribution: { displayName: "Ramzi Kanso" }
+  },
+  {
+    name: "featured-daniella-abdulaziz",
+    rating: 5,
+    originalText: { text: "Excellent service from start to finish! Rabee is always on time, does the job right, and charges a fair price. Reliable, professional, and someone I would definitely recommend to others." },
+    authorAttribution: { displayName: "Daniella Abdulaziz" }
+  },
+  {
+    name: "featured-norrie-horak",
+    rating: 5,
+    originalText: { text: "Robbie and his company are detail-oriented, quick, professional and friendly. Highly recommend!" },
+    authorAttribution: { displayName: "Norrie Horak" }
+  },
+  {
+    name: "featured-google-customer",
+    rating: 5,
+    originalText: { text: "We had an excellent experience working with Shams Home Improvement and are extremely happy with the results. They completed several major projects in our home, including converting a large walk-in closet into a beautiful new bathroom, transforming our high open foyer into a functional additional room on the second floor, converting the attic space above the garage into a spacious closet, and painting the interior of our home. From start to finish, the team was professional, reliable, respectful, and attentive to detail. They communicated clearly throughout the entire process, listened carefully to our ideas and needs, and made sure each project was completed properly and to a high standard. We are very pleased with the improvements they made to our home and would highly recommend Shams Home Improvement to anyone looking for a skilled, dependable, and professional home improvement company." },
+    authorAttribution: { displayName: "Google customer" }
+  }
+];
 export default function GoogleReviews() {
   const root = useRef<HTMLDivElement>(null);
-  const [data, setData] = useState<Data>({ reviews: [] });
+  const [data, setData] = useState<Data>({ reviews: featuredReviews });
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const [hover, setHover] = useState(false);
@@ -25,7 +54,20 @@ export default function GoogleReviews() {
         started = true;
         fetch("/api/reviews", { cache: "no-store", signal: controller.signal })
           .then(r => r.ok ? r.json() : null)
-          .then(result => { if (result && Array.isArray(result.reviews)) setData(result); })
+          .then(result => {
+            if (result && Array.isArray(result.reviews)) {
+              const normalize = (value: string) => value.toLowerCase().replace(/\\s+/g, " ").trim();
+              const featuredKeys = new Set(featuredReviews.map(review => {
+                const body = review.originalText?.text || review.text?.text || "";
+                return `${normalize(review.authorAttribution.displayName)}|${normalize(body)}`;
+              }));
+              const liveReviews = result.reviews.filter((review: Review) => {
+                const body = review.originalText?.text || review.text?.text || "";
+                return !featuredKeys.has(`${normalize(review.authorAttribution.displayName)}|${normalize(body)}`);
+              });
+              setData({ ...result, reviews: [...featuredReviews, ...liveReviews] });
+            }
+          })
           .catch(() => {});
       }
     });
