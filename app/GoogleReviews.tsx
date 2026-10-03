@@ -41,6 +41,12 @@ const featuredReviews: Review[] = [
     originalText: { text: "We had an excellent experience working with Shams Home Improvement and are extremely happy with the results. They completed several major projects in our home, including converting a large walk-in closet into a beautiful new bathroom, transforming our high open foyer into a functional additional room on the second floor, converting the attic space above the garage into a spacious closet, and painting the interior of our home. From start to finish, the team was professional, reliable, respectful, and attentive to detail. They communicated clearly throughout the entire process, listened carefully to our ideas and needs, and made sure each project was completed properly and to a high standard. We are very pleased with the improvements they made to our home and would highly recommend Shams Home Improvement to anyone looking for a skilled, dependable, and professional home improvement company." },
     authorAttribution: { displayName: "Nassir Hatoum" }
   }
+  {
+    name: "featured-adam-bledsoe",
+    rating: 5,
+    originalText: { text: "I've had the pleasure of hiring Shams Home Improvement for several projects over the past few years, and I will hire them for my next project! Entire home exterior and interior paint patch and repair. Kitchen renovation work. Emergency repairs to ceilings and walls after flooding. Really cannot say enough good things about the attention to detail and professionalism from this company. Hire with confidence!" },
+    authorAttribution: { displayName: "Adam Bledsoe" }
+  },
 ];
 export default function GoogleReviews() {
   const root = useRef<HTMLDivElement>(null);
