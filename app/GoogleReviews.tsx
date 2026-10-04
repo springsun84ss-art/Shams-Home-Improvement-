@@ -7,6 +7,12 @@ type Data = { reviews: Review[]; rating?: number; count?: number; url?: string }
 // is temporarily unavailable, and combine them with any other Google reviews.
 const featuredReviews: Review[] = [
   {
+    name: "featured-raed-elawar",
+    rating: 5,
+    originalText: { text: "Rabee and his team did 2 projects at my house. Exceptional work quality and customer service. He explained the work in details and delivered accordingly. That made me feel at easy. No unpleasant surprises." },
+    authorAttribution: { displayName: "Raed Elawar" }
+  },
+  {
     name: "featured-adam-bledsoe",
     rating: 5,
     originalText: { text: "I've had the pleasure of hiring Shams Home Improvement for several projects over the past few years, and I will hire them for my next project! Entire home exterior and interior paint patch and repair. Kitchen renovation work. Emergency repairs to ceilings and walls after flooding. Really cannot say enough good things about the attention to detail and professionalism from this company. Hire with confidence!" },
@@ -50,7 +56,7 @@ const featuredReviews: Review[] = [
 ];
 export default function GoogleReviews() {
   const root = useRef<HTMLDivElement>(null);
-  const [data, setData] = useState<Data>({ reviews: featuredReviews, rating: 5, count: 7 });
+  const [data, setData] = useState<Data>({ reviews: featuredReviews, rating: 5, count: 8 });
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const [hover, setHover] = useState(false);
