@@ -80,15 +80,17 @@ export default function GoogleReviews() {
           .then(result => {
             if (result && Array.isArray(result.reviews)) {
               const normalize = (value: string) => value.toLowerCase().replace(/\s+/g, " ").trim();
-              const featuredKeys = new Set(featuredReviews.map(review => {
-                const body = review.originalText?.text || review.text?.text || "";
-                return `${normalize(review.authorAttribution.displayName)}|${normalize(body)}`;
-              }));
-              const liveReviews = result.reviews.filter((review: Review) => {
-                const body = review.originalText?.text || review.text?.text || "";
-                return !featuredKeys.has(`${normalize(review.authorAttribution.displayName)}|${normalize(body)}`);
+              // A customer's review can appear in both the owner-added list and Google's live feed.
+              // Keep the curated copy first, then ignore any remaining review from the same author.
+              const seenAuthors = new Set<string>();
+              const uniqueReviews = [...featuredReviews, ...result.reviews].filter((review: Review) => {
+                const author = normalize(review.authorAttribution?.displayName || "");
+                if (!author) return true;
+                if (seenAuthors.has(author)) return false;
+                seenAuthors.add(author);
+                return true;
               });
-              setData({ ...result, reviews: [...featuredReviews, ...liveReviews] });
+              setData({ ...result, reviews: uniqueReviews });
             }
           })
           .catch(() => {});
