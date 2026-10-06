@@ -79,7 +79,16 @@ export const galleries = {
     {
       "caption": "Bedroom Closet Conversion — Vanity, Tub & Shower",
       "src": "/images/bathroom-20.webp"
+    },
+    {
+      "caption": "Finished marble-look walk-in shower with glass enclosure",
+      "src": "/images/bathroom-21.webp"
     }
+  ],
+  "electrical": [
+    { "caption": "Bathroom switch box repair in progress", "src": "/images/electrical-01.webp" },
+    { "caption": "New GFCI receptacle prepared for installation", "src": "/images/electrical-02.webp" },
+    { "caption": "Bathroom electrical connections during repair", "src": "/images/electrical-03.webp" }
   ],
   "atticCloset": [
     {
