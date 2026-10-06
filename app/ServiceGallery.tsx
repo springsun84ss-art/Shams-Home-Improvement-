@@ -3,7 +3,8 @@
 import { useRef, useState } from "react";
 import { galleries } from "./gallery-data";
 
-const services = [
+type ServicePhoto = { caption: string; src: string };
+const services: { title: string; text: string; cover: string; photos: ServicePhoto[] }[] = [
   { title: "Bathroom Remodeling", text: "Showers, vanities & complete updates", cover: "/images/bathroom-17.webp", photos: [...galleries.bathroom] },
   { title: "Tile & Flooring", text: "Floors, showers & backsplashes", cover: "/images/bathroom-13.webp", photos: [galleries.bathroom[8], galleries.bathroom[12], galleries.kitchen[3], galleries.porch[22]] },
   { title: "Plumbing", text: "Faucets, sinks & fixture upgrades", cover: "/images/bathroom-14.webp", photos: [galleries.bathroom[13], galleries.bathroom[15], galleries.kitchen[4]] },
