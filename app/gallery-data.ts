@@ -83,6 +83,14 @@ export const galleries = {
     {
       "caption": "Finished marble-look walk-in shower with glass enclosure",
       "src": "/images/bathroom-21.webp"
+    },
+    {
+      "caption": "Bathroom Project 4 — Before: Existing tub and shower",
+      "src": "/images/bathroom-22.webp"
+    },
+    {
+      "caption": "Bathroom Project 4 — After: Finished tiled walk-in shower",
+      "src": "/images/bathroom-23.webp"
     }
   ],
   "electrical": [
