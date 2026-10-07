@@ -5,6 +5,7 @@ import { galleries } from "./gallery-data";
 
 type Group = keyof typeof galleries;
 const projects: { key: Group; title: string; cover: string; description?: string }[] = [
+  { key: "basement", title: "Basement Finishing", cover: "/images/basement-55.webp", description: "Explore this basement project from work in progress to the finished living spaces, oak stairs, bathroom and indoor soccer room." },
   { key: "bathroom", title: "Bathroom Remodeling", cover: "/images/bathroom-17.webp" },
   { key: "atticCloset", title: "Attic-to-Closet Conversion", cover: "/images/attic-closet-06.webp" },
   { key: "roomConversion", title: "Foyer-to-Room Conversion", cover: "/images/room-conversion-09.webp", description: "An open foyer was transformed into a usable room beside an upstairs bedroom, with framing, drywall, electrical, paint, LVP flooring, baseboards and trim molding." },

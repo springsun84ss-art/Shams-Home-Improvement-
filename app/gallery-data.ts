@@ -1,4 +1,242 @@
 export const galleries = {
+  "basement": [
+  {
+    "caption": "Basement Finishing — Finished living area with TV on the right",
+    "src": "/images/basement-55.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-00.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-01.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-02.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-03.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-04.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-05.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-06.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-07.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-08.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-09.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-10.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-11.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-12.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-13.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-14.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-15.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-16.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-17.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-18.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-19.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-20.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-21.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-22.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-23.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-24.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-25.webp"
+  },
+  {
+    "caption": "Basement Finishing — Oak stairs and treads",
+    "src": "/images/basement-26.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-27.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-28.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-29.webp"
+  },
+  {
+    "caption": "Basement Finishing — Oak stairs and treads",
+    "src": "/images/basement-30.webp"
+  },
+  {
+    "caption": "Basement Finishing — Oak stairs and treads",
+    "src": "/images/basement-31.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-32.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-33.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-34.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-35.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-36.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-37.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-38.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-39.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-40.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-41.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-42.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-43.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-44.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-45.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-46.webp"
+  },
+  {
+    "caption": "Basement Finishing — Project in progress",
+    "src": "/images/basement-47.webp"
+  },
+  {
+    "caption": "Basement Finishing — Finished basement",
+    "src": "/images/basement-48.webp"
+  },
+  {
+    "caption": "Basement Finishing — Finished basement",
+    "src": "/images/basement-49.webp"
+  },
+  {
+    "caption": "Basement Finishing — Finished basement",
+    "src": "/images/basement-50.webp"
+  },
+  {
+    "caption": "Basement Finishing — Finished basement",
+    "src": "/images/basement-51.webp"
+  },
+  {
+    "caption": "Basement Finishing — Finished basement",
+    "src": "/images/basement-52.webp"
+  },
+  {
+    "caption": "Basement Finishing — Indoor soccer room",
+    "src": "/images/basement-53.webp"
+  },
+  {
+    "caption": "Basement Finishing — Finished basement",
+    "src": "/images/basement-54.webp"
+  },
+  {
+    "caption": "Basement Finishing — Finished bathroom",
+    "src": "/images/basement-56.webp"
+  },
+  {
+    "caption": "Basement Finishing — Sliding shower door and bathroom fixtures",
+    "src": "/images/basement-57.webp"
+  },
+  {
+    "caption": "Basement Finishing — Sliding shower door and bathroom fixtures",
+    "src": "/images/basement-58.webp"
+  }
+],
   "bathroom": [
     {
       "caption": "Bathroom Project 1 — Before",
