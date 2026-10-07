@@ -92,7 +92,6 @@ export const galleries = {
       "caption": "Bathroom Project 4 — After: Finished tiled walk-in shower",
       "src": "/images/bathroom-23.webp"
     },
-    { "caption": "Bathroom Project 5 — Before: Existing tub and shower", "src": "/images/bathroom-project-5-before.jpg" },
     { "caption": "Bathroom Project 5 — After: Tiled walk-in shower with sliding glass doors", "src": "/images/bathroom-project-5-after.jpg" }
   ],
   "plumbing": [{ "caption": "Single-bowl sink conversion — updated under-sink plumbing and disposal connections", "src": "/images/sink-conversion-plumbing.jpg" }],
