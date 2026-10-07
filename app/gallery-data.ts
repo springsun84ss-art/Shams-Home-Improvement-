@@ -95,6 +95,7 @@ export const galleries = {
     { "caption": "Bathroom Project 5 — Before: Existing tub and shower", "src": "/images/bathroom-project-5-before.jpg" },
     { "caption": "Bathroom Project 5 — After: Tiled walk-in shower with sliding glass doors", "src": "/images/bathroom-project-5-after.jpg" }
   ],
+  "plumbing": [{ "caption": "Single-bowl sink conversion — updated under-sink plumbing and disposal connections", "src": "/images/sink-conversion-plumbing.jpg" }],
   "electrical": [
     { "caption": "Bathroom switch box repair in progress", "src": "/images/electrical-01.webp" },
     { "caption": "New GFCI receptacle prepared for installation", "src": "/images/electrical-02.webp" },
@@ -372,6 +373,8 @@ export const galleries = {
     {
       "caption": "Kitchen Detail",
       "src": "/images/kitchen-05.webp"
-    }
+    },
+    { "caption": "Sink conversion — Before: Double-bowl sink", "src": "/images/sink-conversion-before.jpg" },
+    { "caption": "Sink conversion — After: Single-bowl sink with granite opening modified", "src": "/images/sink-conversion-after.jpg" }
   ]
 } as const;

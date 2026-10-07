@@ -7,7 +7,7 @@ type ServicePhoto = { caption: string; src: string };
 const services: { title: string; text: string; cover: string; photos: ServicePhoto[] }[] = [
   { title: "Bathroom Remodeling", text: "Showers, vanities & complete updates", cover: "/images/bathroom-17.webp", photos: [...galleries.bathroom] },
   { title: "Tile & Flooring", text: "Floors, showers & backsplashes", cover: "/images/bathroom-13.webp", photos: [galleries.bathroom[8], galleries.bathroom[12], galleries.kitchen[3], galleries.porch[22]] },
-  { title: "Plumbing", text: "Faucets, sinks & fixture upgrades", cover: "/images/bathroom-14.webp", photos: [galleries.bathroom[13], galleries.bathroom[15], galleries.kitchen[4]] },
+  { title: "Plumbing", text: "Faucets, sinks & fixture upgrades", cover: "/images/bathroom-14.webp", photos: [galleries.bathroom[13], galleries.bathroom[15], galleries.kitchen[4], ...galleries.plumbing] },
   { title: "Electrical", text: "Lighting, fans & home improvements", cover: "/images/electrical-02.webp", photos: [...galleries.electrical] },
   { title: "Painting & Repairs", text: "Interior, exterior & finishing work", cover: "/images/porch-11.webp", photos: [galleries.porch[10], galleries.porch[18], galleries.deck[0], galleries.deck[2]] },
   { title: "Carpentry & Doors", text: "Framing, trim & door improvements", cover: "/images/porch-17.webp", photos: [galleries.porch[2], galleries.porch[7], galleries.porch[15], galleries.porch[16]] },
