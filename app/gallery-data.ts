@@ -91,7 +91,9 @@ export const galleries = {
     {
       "caption": "Bathroom Project 4 — After: Finished tiled walk-in shower",
       "src": "/images/bathroom-23.webp"
-    }
+    },
+    { "caption": "Bathroom Project 5 — Before: Existing tub and shower", "src": "/images/bathroom-project-5-before.jpg" },
+    { "caption": "Bathroom Project 5 — After: Tiled walk-in shower with sliding glass doors", "src": "/images/bathroom-project-5-after.jpg" }
   ],
   "electrical": [
     { "caption": "Bathroom switch box repair in progress", "src": "/images/electrical-01.webp" },
