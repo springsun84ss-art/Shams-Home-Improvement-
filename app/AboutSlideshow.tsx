@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { galleries } from "./gallery-data";
 
@@ -20,7 +21,7 @@ export default function AboutSlideshow() {
   }, [paused]);
   const photo = photos[index];
   return <div className="aboutCarousel" aria-label="Shams Home Improvement project photos">
-    <img key={photo.src} src={photo.src} alt={photo.caption} />
+    <Image key={photo.src} src={photo.src} alt={photo.caption} width={1400} height={1000} sizes="(max-width: 640px) calc(100vw - 28px), 550px" quality={75} />
     <div className="aboutCarouselInfo"><strong>{photo.group}</strong><span>{photo.caption}</span><small>{index + 1} of {photos.length}</small></div>
     <div className="aboutCarouselControls">
       <button type="button" aria-label="Previous project photo" onClick={() => setIndex(current => (current - 1 + photos.length) % photos.length)}>‹</button>
