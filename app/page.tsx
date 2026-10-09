@@ -1,3 +1,4 @@
+import Image from "next/image";
 import GoogleReviews from "./GoogleReviews";
 import HeroSlides from "./HeroSlides";
 import ProjectGallery from "./ProjectGallery";
@@ -12,7 +13,7 @@ export default function HomePage() {
       <header className="header">
         <div className="container nav">
           <a className="brand" href="#top">
-            <img className="brandLogo" src="/images/shams-logo.webp" alt="Shams Home Improvement logo" />
+            <Image className="brandLogo" src="/images/shams-logo.webp" alt="Shams Home Improvement logo" width={600} height={600} sizes="52px" quality={75} />
             <span><strong>Shams Home Improvement</strong><small>Atlanta Remodeling & Renovation</small></span>
           </a>
           <nav className="links">
@@ -30,7 +31,7 @@ export default function HomePage() {
       <main id="top">
         <section className="hero">
           <HeroSlides />
-          <img className="heroWatermark" src="/images/shams-watermark.webp" alt="" aria-hidden="true" />
+          <Image className="heroWatermark" src="/images/shams-watermark.webp" alt="" aria-hidden="true" width={600} height={600} sizes="(max-width: 640px) 150px, 420px" quality={70} loading="lazy" />
           <div className="container heroInner">
             <p className="eyebrow">Metro Atlanta Home Improvement</p>
             <h1><span className="heroAccent">Quality work.</span><br/><span className="heroTagline">Built to last.</span></h1>

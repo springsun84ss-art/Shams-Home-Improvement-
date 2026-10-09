@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRef, useState } from "react";
 import { galleries } from "./gallery-data";
 
@@ -26,7 +27,7 @@ export default function ServiceGallery() {
     <div className="serviceGrid">{services.map((item, index) =>
       <button type="button" className="servicePhotoCard" key={item.title}
         aria-haspopup="dialog" onClick={() => { setSelected(index); dialog.current?.showModal(); }}>
-        <img src={item.cover} alt="" loading="lazy" />
+        <Image src={item.cover} alt="" fill sizes="(max-width: 640px) calc(100vw - 28px), (max-width: 950px) calc(50vw - 30px), 380px" quality={75} loading="lazy" />
         <span className="serviceCardContent"><strong>{item.title}</strong><span>{item.text}</span><small>View photos →</small></span>
       </button>
     )}</div>
@@ -37,7 +38,7 @@ export default function ServiceGallery() {
       </div>
       <p className="serviceGalleryIntro">Explore details from our remodeling and repair projects.</p>
       <div className="serviceGalleryPhotos">{service.photos.map(photo =>
-        <figure key={photo.src}><img src={photo.src} alt={photo.caption} loading="lazy" /><figcaption>{photo.caption}</figcaption></figure>
+        <figure key={photo.src}><Image src={photo.src} alt={photo.caption} width={1200} height={800} sizes="(max-width: 640px) calc(100vw - 76px), 450px" quality={70} loading="lazy" /><figcaption>{photo.caption}</figcaption></figure>
       )}</div>
       <a className="button" href="#estimate" onClick={() => dialog.current?.close()}>Request a Free Estimate</a>
     </dialog>
