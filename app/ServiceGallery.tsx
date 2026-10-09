@@ -12,7 +12,7 @@ const services: { title: string; text: string; cover: string; photos: ServicePho
   { title: "Plumbing", text: "Faucets, sinks & fixture upgrades", cover: "/images/bathroom-14.webp", photos: [galleries.bathroom[13], galleries.bathroom[15], galleries.kitchen[4], ...galleries.plumbing] },
   { title: "Electrical", text: "Lighting, fans & home improvements", cover: "/images/electrical-02.webp", photos: [...galleries.electrical] },
   { title: "Painting & Repairs", text: "Interior, exterior & finishing work", cover: "/images/porch-11.webp", photos: [galleries.porch[10], galleries.porch[18], galleries.deck[0], galleries.deck[2]] },
-  { title: "Carpentry & Doors", text: "Framing, trim & door improvements", cover: "/images/porch-17.webp", photos: [galleries.porch[2], galleries.porch[7], galleries.porch[15], galleries.porch[16]] },
+  { title: "Carpentry & Doors", text: "Framing, trim & door improvements", cover: "/images/porch-16.webp", photos: [galleries.porch[2], galleries.porch[7], galleries.porch[15], galleries.porch[16]] },
   { title: "Decks", text: "Repairs, rebuilding & replacement", cover: "/images/deck-feature.webp", photos: [...galleries.deck] },
   { title: "Covered Porches", text: "From framing to the finished porch", cover: "/images/porch-21.webp", photos: [...galleries.porch] },
   { title: "Countertops & Cabinets", text: "Kitchen surfaces & cabinet updates", cover: "/images/kitchen-03.webp", photos: [...galleries.kitchen] },
@@ -27,7 +27,7 @@ export default function ServiceGallery() {
     <div className="serviceGrid">{services.map((item, index) =>
       <button type="button" className="servicePhotoCard" key={item.title}
         aria-haspopup="dialog" onClick={() => { setSelected(index); dialog.current?.showModal(); }}>
-        <Image src={item.cover} alt="" fill sizes="(max-width: 640px) calc(100vw - 28px), (max-width: 950px) calc(50vw - 30px), 380px" quality={75} loading="lazy" />
+        <Image src={item.cover} alt="" fill sizes="(max-width: 350px) calc(100vw - 28px), (max-width: 640px) calc((100vw - 40px) / 2), (max-width: 950px) calc((100vw - 58px) / 2), 380px" quality={75} loading="lazy" />
         <span className="serviceCardContent"><strong>{item.title}</strong><span>{item.text}</span><small>View photos →</small></span>
       </button>
     )}</div>
