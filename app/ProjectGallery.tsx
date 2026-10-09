@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { galleries } from "./gallery-data";
 
@@ -36,7 +37,7 @@ export default function ProjectGallery() {
   return <>
     <div className="projectGrid">{projects.map((project) =>
       <button className="project" key={project.key} onClick={() => { setIndex(0); setGroup(project.key); }}>
-        <img src={project.cover} alt={`Completed ${project.title.toLowerCase()} project`} loading="lazy" />
+        <Image src={project.cover} alt={`Completed ${project.title.toLowerCase()} project`} fill sizes="(max-width: 640px) calc(100vw - 28px), (max-width: 950px) calc(50vw - 32px), 581px" quality={75} />
         <span>{project.title}<small>View {galleries[project.key].length} photos →</small></span>
       </button>
     )}</div>
@@ -44,9 +45,9 @@ export default function ProjectGallery() {
       <div className="galleryDialog" role="dialog" aria-modal="true" aria-label={`${selectedProject?.title} photos`}>
         <div className="galleryTop"><strong>{selectedProject?.title}</strong><button aria-label="Close gallery" onClick={() => setGroup(null)}>×</button></div>
         {selectedProject?.description ? <p style={{ margin: "0 22px 8px", color: "#dce3e6", fontSize: 14, lineHeight: 1.5 }}>{selectedProject.description}</p> : null}
-        <div className="galleryStage"><button aria-label="Previous photo" onClick={() => move(-1)}>‹</button><img src={photos[index].src} alt={photos[index].caption} /><button aria-label="Next photo" onClick={() => move(1)}>›</button></div>
+        <div className="galleryStage"><button aria-label="Previous photo" onClick={() => move(-1)}>‹</button><Image src={photos[index].src} alt={photos[index].caption} width={1600} height={1200} sizes="(max-width: 640px) 90vw, 960px" quality={75} /><button aria-label="Next photo" onClick={() => move(1)}>›</button></div>
         <p>{photos[index].caption} <span>{index + 1} / {photos.length}</span></p>
-        <div className="galleryThumbs">{photos.map((photo, i) => <button key={photo.src} className={i === index ? "active" : ""} aria-label={`Show ${photo.caption}`} onClick={() => setIndex(i)}><img src={photo.src} alt="" loading="lazy" /></button>)}</div>
+        <div className="galleryThumbs">{photos.map((photo, i) => <button key={photo.src} className={i === index ? "active" : ""} aria-label={`Show ${photo.caption}`} onClick={() => setIndex(i)}><Image src={photo.src} alt="" width={120} height={90} sizes="72px" quality={60} loading="lazy" /></button>)}</div>
       </div>
     </div>}
   </>;
