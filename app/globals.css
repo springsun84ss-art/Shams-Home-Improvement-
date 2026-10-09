@@ -82,3 +82,6 @@
 .slideDots button.active{background:transparent}
 .slideDots button.active::before{background:#fff}
 .slideDots button:focus-visible{outline:2px solid #fff;outline-offset:1px;border-radius:50%}
+
+/* The mobile text action sits on the gold accent background. */
+.mobileBar a:last-child{color:var(--deep)}
