@@ -66,3 +66,19 @@
 }
 
 .hero h1 .heroAccent{color:#f1c15b}.hero h1 .heroTagline{color:#fff}
+
+
+/* Lighthouse improvements: readable contrast, responsive image targets, and generous carousel controls. */
+:root{--muted:#56636b;--contrast-ink:#75410f}
+.brand small,.textLink,.eyebrow,.card>span,.googleReviewStars{color:var(--contrast-ink)}
+.hero .eyebrow,.cta .eyebrow{color:#f3c798}
+.button{color:var(--deep)}
+.button.outline{color:#fff}
+.button.dark,.cta .button{color:#fff}
+.steps b{color:var(--deep)}
+.slideDots{align-items:center;gap:4px}
+.slideDots button{position:relative;display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:0;background:transparent;cursor:pointer}
+.slideDots button::before{content:"";width:11px;height:11px;border:1px solid #fff;border-radius:50%;background:transparent}
+.slideDots button.active{background:transparent}
+.slideDots button.active::before{background:#fff}
+.slideDots button:focus-visible{outline:2px solid #fff;outline-offset:1px;border-radius:50%}
