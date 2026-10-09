@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const slides = [
@@ -16,8 +17,11 @@ export default function HeroSlides() {
     const timer = window.setInterval(() => setActive(i => (i + 1) % slides.length), 4000);
     return () => window.clearInterval(timer);
   }, []);
+  const slide = slides[active];
   return <div className="heroSlides" aria-label="Featured project photos">
-    {slides.map((slide, i) => <img key={slide.src} src={slide.src} alt={i === active ? slide.label : ""} aria-hidden={i !== active} className={i === active ? "active" : ""} />)}
-    <div className="slideDots" aria-label="Choose featured photo">{slides.map((slide, i) => <button key={slide.src} type="button" className={i === active ? "active" : ""} aria-label={`Show ${slide.label}`} onClick={() => setActive(i)} />)}</div>
+    <Image key={slide.src} src={slide.src} alt={slide.label} fill sizes="100vw" quality={75} priority={active === 0} className="active" />
+    <div className="slideDots" aria-label="Choose featured photo">{slides.map((item, i) =>
+      <button key={item.src} type="button" className={i === active ? "active" : ""} aria-label={`Show ${item.label}`} aria-pressed={i === active} onClick={() => setActive(i)} />
+    )}</div>
   </div>;
 }
